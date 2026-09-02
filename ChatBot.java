@@ -24,7 +24,7 @@ public class ChatBot{
      */
     public static int findKeyword(String statement, String key){
       
-        for (int i = 0; i < statement.length() - key.length(); i++){
+        for (int i = 0; i <= statement.length() - key.length(); i++){
             if ( statement.substring(i, i + key.length()).equals(key))
               return i;
         }
